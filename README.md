@@ -1,8 +1,8 @@
-# Examplore
+# Examplore: Visualizing API Usage at Scale
 
-This repository contains the source code of Examplore.  
+This repository contains the source code of Examplore. Please refer to our CHI 2018 paper *[Visualizing API Usage at Scale](http://web.cs.ucla.edu/~tianyi.zhang/examplore.pdf)* for details. 
 
-# To run Examplore
+## Run Examplore
 1. Install [Meteor](https://www.meteor.com/install)
 2. Go to the `meteor_app` folder and install pycollections and babel-runtime
 ```bash
@@ -20,5 +20,5 @@ Note: If your OS is MacOS, install MongoDB using Homebrew ([Tutorial](https://gi
 5. In the terminal, `cd` into the `meteor_app` folder and then execute `meteor` command.
 6. Open the app at http://localhost:3000
 
-# Load More API Data
+## Load More API Data
 By default, Examplore only loads the dataset of the Android API method, `Activity.findViewById`. We have prepared datasets for 100 popular API methods in Java and Android. You can find them in `meteor_app/private/`. To load the dataset of a different API method, you need to manually change the dataset name to the corresponding json file name in `meteor_app/private/` at line 18 in `meteor_app/server/main.js` (make sure the value of `reload` is set to `true` at line 14).
