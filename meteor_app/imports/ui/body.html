@@ -1,0 +1,804 @@
+ <body>
+
+  <div class="container-fluid">
+    <div class="row" style="padding-top: 2em;">
+      <b><center>
+      <div class="col-md-12 ">
+        <h4>Choose an API: 
+          <div class="dropdown" style="display: inline-block;">
+            <select id="change-dataset">
+              <option value="findViewById">Activity.findViewById()</option>
+              <option value="getId">Activity.getId()</option>
+              <option value="setContentView">Activity.setContentView()</option>
+              <option value="superOnCreate">Activity.super.onCreate()</option>
+              <option value="loadIcon">ApplicationInfo.loadIcon()</option>
+              <option value="readLine">BufferedReader.readLine()</option>
+              <option value="bundleGetString">Bundle.getString()</option>
+              <option value="putString">Bundle.putString()</option>
+              <option value="byteBufferGet">ByteBuffer.get()</option>
+              <option value="getInstance">Calendar.getInstance()</option>
+              <option value="init">Cipher.init()</option>
+              <option value="forName">Class.forName()</option>
+              <option value="cursorClose">Cursor.close()</option>
+              <option value="cursorGetString">Cursor.getString()</option>
+              <option value="moveToFirst">Cursor.moveToFirst()</option>
+              <option value="dataOutputStreamClose">DataOutputStream.close()</option>
+              <option value="parseDouble">Double.parseDouble()</option>
+              <option value="editTextSetText">EditText.setText()</option>
+              <option value="getExternalStorageDirectory">Environment.getExternalStorageDirectory()</option>
+              <option value="createNewFile">File.createNewFile()</option>
+              <option value="mkdir">File.mkdir()</option>
+              <option value="fileChannelWrite">FileChannel.write()</option>
+              <option value="FileInputStream">FileInputStream.FileInputStream()</option>
+              <option value="execute">HttpClient.execute()</option>
+              <option value="getEntity">HttpResponse.getEntity()</option>
+              <option value="getParameter">HttpServletRequest.getParameter()</option>
+              <option value="inputStreamRead">InputStream.read()</option>
+              <option value="parseInt">Integer.parseInt()</option>
+              <option value="getStringExtra">Intent.getStringExtra()</option>
+              <option value="putExtra">Intent.putExtra()</option>
+              <option value="next">Iterator.next()</option>
+              <option value="addActionListener">JButton.addActionListener()</option>
+              <option value="jFrameAdd">JFrame.add()</option>
+              <option value="getContentPane">JFrame.getContentPane()</option>
+              <option value="pack">JFrame.pack()</option>
+              <option value="setDefaultCloseOperation">JFrame.setDefaultCloseOperation()</option>
+              <option value="setPreferredSize">JFrame.setPreferredSize()</option>
+              <option value="setVisible">JFrame.setVisible()</option>
+              <option value="showMessageDialog">JOptionPane.showMessageDialog()</option>
+              <option value="jPanelAdd">JPanel.add()</option>
+              <option value="getAsString">JsonElement.getAsString()</option>
+              <option value="getJSONArray">JSONObject.getJSONArray()</option>
+              <option value="getJSONObject">JSONObject.getJSONObject()</option>
+              <option value="jSONObjectGetString">JSONObject.getString()</option>
+              <option value="connect">Jsoup.connect()</option>
+              <option value="load">KeyStore.load()</option>
+              <option value="from">LayoutInflater.from()</option>
+              <option value="inflate">LayoutInflater.inflate()</option>
+              <option value="addView">LinearLayout.addView()</option>
+              <option value="listAdd">List.add()</option>
+              <option value="listGet">List.get()</option>
+              <option value="setAdapter">ListView.setAdapter()</option>
+              <option value="doFinal-getBytes">Mac-String.doFinal-getBytes()</option>
+              <option value="doFinal-String">Mac-String.doFinal-String()</option>
+              <option value="mapGet">Map.get()</option>
+              <option value="put">Map.put()</option>
+              <option value="find">Matcher.find()</option>
+              <option value="group">Matcher.group()</option>
+              <option value="digest">MessageDigest.digest()</option>
+              <option value="compile">Pattern.compile())</option>
+              <option value="matcher">Pattern.matcher()</option>
+              <option value="getDefaultSharedPreferences">PreferenceManager.getDefaultSharedPreferences()</option>
+              <option value="setString">PreparedStatement.setString()</option>
+              <option value="printWriterWrite">PrintWriter.write()</option>
+              <option value="start">ProcessBuilder.start()</option>
+              <option value="dismiss">ProgressDialog.dismiss()</option>
+              <option value="randomNextInt">Random.nextInt()</option>
+              <option value="randomAccessFileRead">RandomAccessFile.read()</option>
+              <option value="randomAccessFileWrite">RandomAccessFile.write()</option>
+              <option value="resultSetGetString">ResultSet.getString()</option>
+              <option value="scannerNextInt">Scanner.nextInt()</option>
+              <option value="nextLine">Scanner.nextLine()</option>
+              <option value="setAdd">Set.add()</option>
+              <option value="edit">SharedPreferences.edit()</option>
+              <option value="commit">SharedPreferences.Editor.commit()</option>
+              <option value="sharedPreferencesGetString">SharedPreferences.getString()</option>
+              <option value="simpleDateFormatFormat">SimpleDateFormat.format()</option>
+              <option value="parse">SimpleDateFormat.parse()</option>
+              <option value="SimpleDateFormat">SimpleDateFormat.SimpleDateFormat()</option>
+              <option value="getOutputStream">Socket.getOutputStream()</option>
+              <option value="firstKey">SortedMap.firstKey()</option>
+              <option value="query">SQLiteDatabase.query()</option>
+              <option value="charAt">String.charAt()</option>
+              <option value="stringFormat">String.format()</option>
+              <option value="getBytes">String.getBytes()</option>
+              <option value="indexOf">String.indexOf()</option>
+              <option value="replaceAll">String.replaceAll()</option>
+              <option value="split">String.split()</option>
+              <option value="substring">String.substring()</option>
+              <option value="append">StringBuilder.append()</option>
+              <option value="nextToken">StringTokenizer.nextToken()</option>
+              <option value="invokeLater">SwingUtilities.invokeLater()</option>
+              <option value="nanoTime">System.nanoTime()</option>
+              <option value="setText">TextView.setText()</option>
+              <option value="sleep">Thread.sleep()</option>
+              <option value="makeText">Toast.makeText()</option>
+              <option value="typedArrayGetString">TypedArray.getString()</option>
+              <option value="openConnection">URL.openConnection()</option>
+              <option value="encode">URLEncoder.encode()</option>
+              <option value="viewFindViewById">View.findViewById()</option>
+            </select>
+          </div>
+        </h4>
+      </div>
+    </center>
+  </b>
+      <div class="col-md-6" style="padding-top: .5em;">
+        <!-- <div class="col-md-1"> -->
+          <!-- <h5>Filtered counts</h5> -->
+          
+          <!-- </div> -->
+          <!-- <div class="col-md-1"> -->
+            <!-- <h5>Total counts</h5> -->
+
+            <!-- </div> -->
+        <!-- <div class="col-md-1">
+        </div> -->
+        <div class="col-md-2">
+          <!-- <h5>Histogram</h5> -->
+        </div>
+
+        <div class="col-md-12">
+          <h3>Cross-example counts for <span class="code">{{getDataset}}</span></h3>
+          <!-- <button type="button" class="btn btn-dark hide-labels"  title="display/hide the labels of code blocks in the synthetic code skeleton">Toggle Labels</button> -->
+          <!-- <button type="button" class="btn btn-dark toggle-collapse" data-toggle="button" style="padding: 2px; margin: 2px;">Fold Code</button> -->
+          <!-- <button type="button" class="btn btn-secondary toggle-collapse active" data-toggle="button" style="padding: 2px; margin: 2px;">Fold Code</button> -->
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary toggle-collapse" data-toggle="button" title="expand/collapse the top 3 most common options in each code block">Fold Code</button>
+            <button type="button" class="btn btn-primary show-default" title="display the top 3 most common options in each code block">Show Default</button>
+            <button type="button" class="btn btn-primary less-uncommon" title="display one more common option in each code block">Show Less</button>
+            <button type="button" class="btn btn-primary more-uncommon" title="display one less common option in each code block">Show More</button>
+            <button type="button" class="btn btn-primary show-all" title="display all options in each code block">Show All</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="padding-top: .5em;">
+        <div class="col-md-12">
+          <h3>{{count}} concrete examples from GitHub</h3>
+          <button type="button" class="btn btn-primary reset-all" data-toggle="button" style="padding: 2px; margin: 2px;" title="remove all active filters">Reset</button>
+          <span class="label label-default">Active Filters:</span>
+          {{#each selectorKeys}}
+          <!-- {{key}} {{value}} -->
+          {{> breadcrumb key=this}}
+          {{/each}}
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="padding-bottom: .75em; padding-top: .75em;">
+<!--         <div class="col-md-1">
+          <h5>Filtered counts</h5>
+        </div>
+        <div class="col-md-1">
+          <h5>Total counts</h5>
+        </div> -->
+        <div class="col-md-2">
+          <h5 class='label label-default'>Counts</h5>
+        </div>
+        <div class="col-md-10">
+          <h5 class='label label-default'>Blocks of options</h5>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="height: 1200px; overflow: scroll;">
+        <!-- {{> functionOptionBlock blockname="precedingAPICall"}} -->
+        {{> declarations blockname='initialization'}}
+        {{> try blockname='try'}}
+        {{> precall blockname='configuration'}}
+        {{> precheck blockname='guardCondition'}}
+        {{> focus blockname='focalAPI'}}
+        {{> postcheck blockname='followUpCheck'}}
+        {{> postcall blockname='use'}}
+        <!-- close curly brace for post check-->
+        <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+          <div class="col-md-2"></div>
+          <div class="col-md-10">
+            <div style="padding-left: 60px; display: flex;">
+             <span style="padding-left:15px;"> </span>
+             <span class="followUpCheck" style="flex: 1;">}</span>
+           </div>
+         </div>
+       </div>
+       <!-- close curly brace for pre check-->
+       <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+          <div style="padding-left: 30px; display: flex;">
+           <span style="padding-left:15px;"> </span>
+           <span class="guardCondition" style="flex: 1;">}</span>
+         </div>
+       </div>
+     </div>
+     {{> catch blockname='exceptionType'}}
+     {{> ehcall blockname='exceptionHandlingCall'}}
+     <!-- close curly brace for the catch block -->
+     <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+      <div class="col-md-2"></div>
+      <div class="col-md-10">
+        <div style="padding-left: 0px; display: flex;">
+         <span style="padding-left:15px;"> </span>
+         <span class="try" style="flex: 1;">}</span>
+       </div>
+     </div>
+   </div>
+   {{> finally blockname='cleanUpCall'}}
+
+        <!-- the general template for all blocks and options 
+        {{#each optionBlocks}}
+          {{> optionBlock blockname=this}}
+        {{/each}}
+      -->
+
+      <!-- {{> functionOptionBlock blockname="postAPICall"}} -->
+    </div>
+    <div class="col-md-6" style="height: 1200px; overflow: scroll;">
+      {{#each filteredExamples}}
+      {{> example}}
+      {{/each}}
+    </div>
+  </div>
+</div>
+</body>
+
+
+<template name="optionBlock">
+  <!-- <br> -->
+  <div class="row block-level"> 
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-10">
+      <div style="padding-left: {{prepreIndentationOuter blockname}}px">
+        <span>{{preCodeSnippet blockname}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="row block-level"> 
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-10">
+      <div style="padding-left: {{preIndentationOuter blockname}}px">
+        <span>{{codeSnippet blockname}}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large"> <!-- style="padding-top: 10px;" -->
+<!--     <div class="col-md-1 numbers count-{{conditionalCountBlock blockname}}">
+      {{conditionalCountBlock blockname}}
+    </div>
+    <div class="col-md-1 numbers">
+      {{countBlock blockname}}
+    </div> -->
+    <div class="col-md-2">
+      <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{countBlock blockname}} examples have {{blockname}}{{conditionalTooltip blockname}}">
+        <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(100,100,225,0.6); width:{{conditionalWidth blockname}}%"></div>
+        <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(100,100,225,0.2); width:{{remainingTotalWidth blockname}}%"></div>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div style="padding-left: {{indentationOuter blockname}}px; display: flex;">
+        <!-- <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#{{blockname}}-options"  style="padding: 1px; margin: 1px; height: 20px;">
+          <i class="fa fa-angle-double-right"></i>
+        </button>  -->
+        <span style="width: 15px;">
+          <input type="checkbox" style="visibility: {{visibility blockname}}" checked="{{checked}}" class="toggle-checked filterByBlock parent count-{{conditionalCountZeroBlock blockname}} count-{{countBlock blockname}}" id="{{blockname}}">
+        </span>
+        
+        <!-- <span>{{codeSnippet blockname}}</span> -->
+        <span class="{{blockname}}" style="flex: 1;">{{blockHeader blockname}}</span>
+        <!-- <span class="{{blockname}}" style="float: right;">{{blockHeader blockname}}</span> -->
+      </div>
+    </div>
+  </div>
+  
+  <div id="{{blockname}}-options" class="collapse">
+    <!-- <div id="{{blockname}}-options"> -->
+      {{#each options blockname}}
+      <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+<!--         <div class="col-md-1 numbers count-{{conditionalCountOption this}}">
+          {{conditionalCountOption this}}
+        </div>
+        <div class="col-md-1 numbers">
+          {{count this}}
+        </div> -->
+        <div class="col-md-2">
+          <div style="padding-left: 15px;">
+            <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
+              <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div style="padding-left: {{indentationInner}}px; display: flex;">
+            <span style="width: 15px;">
+              {{#if checkboxType this}}
+              <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+              {{else}}
+              <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+              {{/if}}
+            </span>
+            <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
+            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="row block-level"> 
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: {{postIndentationOuter blockname}}px">
+          <span>{{postCodeSnippet blockname}}</span>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template name="declarations">
+    <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+      <div class="col-md-2">
+        <div class="progress" style="margin-bottom: 0px; height:30px" title="Out of 100 examples, {{countBlock blockname}} examples have {{blockname}}{{conditionalTooltip blockname}}">
+          <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(100,100,225,0.6); width:{{conditionalWidth blockname}}%"></div>
+          <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(100,100,225,0.2); width:{{remainingTotalWidth blockname}}%"></div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: 0px; display: flex;">
+          <span style="width: 15px;">
+            <input type="checkbox" checked="{{checked}}" class="toggle-checked filterByBlock parent count-{{conditionalCountZeroBlock blockname}} count-{{countBlock blockname}}" id="{{blockname}}">
+          </span>
+          <span class="{{blockname}}" style="flex: 1;">{{blockHeader blockname}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="{{blockname}}-options" class="collapse">
+      {{#each options blockname}}
+      <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+        <div class="col-md-2">
+          <div style="padding-left: 0px;">
+            <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
+              <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div style="padding-left: 15px; display: flex;">
+            <span style="width: 30px;">
+              {{#if checkboxType this}}
+              <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+              {{else}}
+              <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+              {{/if}}
+            </span>
+            <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
+            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </template>
+
+  <template name="try">
+    <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+      <div class="col-md-2">
+        <div class="progress" style="margin-bottom: 0px; height:30px" title="Out of 100 examples, {{countBlock blockname}} examples have {{blockname}}{{conditionalTooltip blockname}}">
+          <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(100,100,225,0.6); width:{{conditionalWidth blockname}}%"></div>
+          <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(100,100,225,0.2); width:{{remainingTotalWidth blockname}}%"></div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: 0px; display: flex;">
+          <span style="width: 15px;">
+            <input type="checkbox" checked="{{checked}}" class="toggle-checked filterByBlock parent count-{{conditionalCountZeroBlock blockname}} count-{{countBlock blockname}}" id="{{blockname}}">
+          </span>
+          <span class="{{blockname}}" style="flex: 1;">try {</span>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template name="precall">
+    <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+      <div class="col-md-2">
+        <div class="progress" style="margin-bottom: 0px; height:30px" title="Out of 100 examples, {{countBlock blockname}} examples have {{blockname}}{{conditionalTooltip blockname}}">
+          <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(100,100,225,0.6); width:{{conditionalWidth blockname}}%"></div>
+          <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(100,100,225,0.2); width:{{remainingTotalWidth blockname}}%"></div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: 30px; display: flex;">
+          <span style="width: 15px;">
+            <input type="checkbox" checked="{{checked}}" class="toggle-checked filterByBlock parent count-{{conditionalCountZeroBlock blockname}} count-{{countBlock blockname}}" id="{{blockname}}">
+          </span>
+          <span class="{{blockname}}" style="flex: 1;">pre method call</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="{{blockname}}-options" class="collapse">
+      {{#each options blockname}}
+      <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+        <div class="col-md-2">
+          <div style="padding-left: 0px;">
+            <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
+              <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div style="padding-left: 45px; display: flex;">
+            <span style="width: 30px;">
+              {{#if checkboxType this}}
+              <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+              {{else}}
+              <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+              {{/if}}
+            </span>
+            <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
+            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </template>
+
+  <template name="precheck">
+    <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+      <div class="col-md-2">
+        <div class="progress" style="margin-bottom: 0px; height:30px" title="Out of 100 examples, {{countBlock blockname}} examples have {{blockname}}{{conditionalTooltip blockname}}">
+          <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(100,100,225,0.6); width:{{conditionalWidth blockname}}%"></div>
+          <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(100,100,225,0.2); width:{{remainingTotalWidth blockname}}%"></div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: 30px; display: flex;">
+          <span style="width: 15px;">
+            <input type="checkbox" checked="{{checked}}" class="toggle-checked filterByBlock parent count-{{conditionalCountZeroBlock blockname}} count-{{countBlock blockname}}" id="{{blockname}}">
+          </span>
+          <span class="{{blockname}}" style="flex: 1;">if (</span>
+        </div>
+      </div>
+    </div>
+    <div id="{{blockname}}-options" class="collapse">
+      {{#each options blockname}}
+      <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+        <div class="col-md-2">
+          <div style="padding-left: 0px;">
+            <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
+              <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div style="padding-left: 45px; display: flex;">
+            <span style="width: 30px;">
+              {{#if checkboxType this}}
+              <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+              {{else}}
+              <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+              {{/if}}
+            </span>
+            <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
+            <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+      <div class="col-md-2"></div>
+      <div class="col-md-10">
+        <div style="padding-left: 30px; display: flex;">
+         <span style="padding-left:15px;"> </span>
+         <span class="guardType" style="flex: 1;">) {</span>
+       </div>
+     </div>
+   </div>
+ </template>
+
+ <template name="focus">
+  <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+    <div class="col-md-2">
+      <div class="progress" style="margin-bottom: 0px; height:30px" title="Out of 100 examples, {{countBlock blockname}} examples have {{blockname}}{{conditionalTooltip blockname}}">
+        <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(100,100,225,0.6); width:{{conditionalWidth blockname}}%"></div>
+        <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(100,100,225,0.2); width:{{remainingTotalWidth blockname}}%"></div>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div style="padding-left: 60px; display: flex;">
+        <span style="width: 15px;"></span>
+        <span class="{{blockname}}" style="flex: 1;">{{blockHeader blockname}}</span>
+      </div>
+    </div>
+  </div>
+  
+  <div id="{{blockname}}-options" class="collapse">
+    {{#each options blockname}}
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+      <div class="col-md-2">
+        <div style="padding-left: 0px;">
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: 75px; display: flex;">
+          <span style="width: 30px;">
+            {{#if checkboxType this}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{else}}
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            {{/if}}
+          </span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</template>
+
+<template name="postcheck">
+  <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+    <div class="col-md-2">
+      <div class="progress" style="margin-bottom: 0px; height:30px" title="Out of 100 examples, {{countBlock blockname}} examples have {{blockname}}{{conditionalTooltip blockname}}">
+        <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(100,100,225,0.6); width:{{conditionalWidth blockname}}%"></div>
+        <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(100,100,225,0.2); width:{{remainingTotalWidth blockname}}%"></div>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div style="padding-left: 60px; display: flex;">
+        <span style="width: 15px;">
+          <input type="checkbox" checked="{{checked}}" class="toggle-checked filterByBlock parent count-{{conditionalCountZeroBlock blockname}} count-{{countBlock blockname}}" id="{{blockname}}">
+        </span>
+        <span class="{{blockname}}" style="flex: 1;">if (</span>
+      </div>
+    </div>
+  </div>
+  <div id="{{blockname}}-options" class="collapse">
+    {{#each options blockname}}
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+      <div class="col-md-2">
+        <div style="padding-left: 0px;">
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: 75px; display: flex;">
+          <span style="width: 30px;">
+            {{#if checkboxType this}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{else}}
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            {{/if}}
+          </span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+    <div class="col-md-2"></div>
+    <div class="col-md-10">
+      <div style="padding-left: 60px; display: flex;">
+       <span style="padding-left:15px;"> </span>
+       <span class="followUpCheck" style="flex: 1;">) {</span>
+     </div>
+   </div>
+ </div>
+</template>
+
+<template name="postcall">
+  <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+    <div class="col-md-2">
+      <div class="progress" style="margin-bottom: 0px; height:30px" title="Out of 100 examples, {{countBlock blockname}} examples have {{blockname}}{{conditionalTooltip blockname}}">
+        <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(100,100,225,0.6); width:{{conditionalWidth blockname}}%"></div>
+        <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(100,100,225,0.2); width:{{remainingTotalWidth blockname}}%"></div>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div style="padding-left: 80px; display: flex;">
+        <span style="width: 15px;">
+          <input type="checkbox" checked="{{checked}}" class="toggle-checked filterByBlock parent count-{{conditionalCountZeroBlock blockname}} count-{{countBlock blockname}}" id="{{blockname}}">
+        </span>
+        <span class="{{blockname}}" style="flex: 1;">post method call</span>
+      </div>
+    </div>
+  </div>
+  <div id="{{blockname}}-options" class="collapse">
+    {{#each options blockname}}
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+      <div class="col-md-2">
+        <div style="padding-left: 0px;">
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: 95px; display: flex;">
+          <span style="width: 30px;">
+            {{#if checkboxType this}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{else}}
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            {{/if}}
+          </span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</template>
+
+<template name="catch">
+  <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+    <div class="col-md-2"></div>
+    <div class="col-md-10">
+      <div style="padding-left: 0px; display: flex;">
+        <span style="padding-left:15px;"> </span>
+        <span class="try" style="flex: 1;">} catch (</span>
+      </div>
+    </div>
+  </div>
+  <div id="{{blockname}}-options" class="collapse">
+    {{#each options blockname}}
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+      <div class="col-md-2">
+        <div style="padding-left: 0px;">
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: 30px; display: flex;">
+          <span style="width: 30px;">
+            {{#if checkboxType this}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{else}}
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            {{/if}}
+          </span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}} e</span>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+    <div class="col-md-2"></div>
+    <div class="col-md-10">
+      <div style="padding-left: 0px; display: flex;">
+       <span style="padding-left:15px;"> </span>
+       <span class="try" style="flex: 1;">) {</span>
+     </div>
+   </div>
+ </div>
+</template>
+
+<template name="ehcall">
+  <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+    <div class="col-md-2">
+      <div class="progress" style="margin-bottom: 0px; height:30px" title="Out of 100 examples, {{countBlock blockname}} examples have {{blockname}}{{conditionalTooltip blockname}}">
+        <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(100,100,225,0.6); width:{{conditionalWidth blockname}}%"></div>
+        <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(100,100,225,0.2); width:{{remainingTotalWidth blockname}}%"></div>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div style="padding-left: 30px; display: flex;">
+        <span style="width: 15px;">
+          <input type="checkbox" checked="{{checked}}" class="toggle-checked filterByBlock parent count-{{conditionalCountZeroBlock blockname}} count-{{countBlock blockname}}" id="{{blockname}}">
+        </span>
+        <span class="{{blockname}}" style="flex: 1;">exception handling call</span>
+      </div>
+    </div>
+  </div>
+  <div id="{{blockname}}-options" class="collapse">
+    {{#each options blockname}}
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+      <div class="col-md-2">
+        <div style="padding-left: 0px;">
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: 45px; display: flex;">
+          <span style="width: 30px;">
+            {{#if checkboxType this}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{else}}
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            {{/if}}
+          </span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</template>
+
+<template name="finally">
+  <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+    <div class="col-md-2">
+      <div class="progress" style="margin-bottom: 0px; height:30px" title="Out of 100 examples, {{countBlock blockname}} examples have {{blockname}}{{conditionalTooltip blockname}}">
+        <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(100,100,225,0.6); width:{{conditionalWidth blockname}}%"></div>
+        <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(100,100,225,0.2); width:{{remainingTotalWidth blockname}}%"></div>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div style="padding-left: 0px; display: flex;">
+        <span style="width: 15px;">
+          <input type="checkbox" checked="{{checked}}" class="toggle-checked filterByBlock parent count-{{conditionalCountZeroBlock blockname}} count-{{countBlock blockname}}" id="{{blockname}}">
+        </span>
+        <span class="{{blockname}}" style="flex: 1;">finally {</span>
+      </div>
+    </div>
+  </div>
+  <div id="{{blockname}}-options" class="collapse">
+    {{#each options blockname}}
+    <div class="row {{#if toggleZeroCount}}hide-{{conditionalAndTotalCountOption this}}{{/if}}">
+      <div class="col-md-2">
+        <div style="padding-left: 0px;">
+          <div class="progress" style="margin-bottom: 0px;" title="Out of 100 examples, {{count this}} examples have {{this}}{{conditionalTooltipOption this}}">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="background-color: rgba(0,100,225,0.6); width:{{conditionalWidthOption this}}%"></div>
+            <div class="progress-bar progress-bar-success" role="progressbar" style="background-color: rgba(0,100,225,0.2); width:{{remainingTotalWidthOption this}}%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div style="padding-left: 15px; display: flex;">
+          <span style="width: 30px;">
+            {{#if checkboxType this}}
+            <input type="checkbox" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByCheckOption count-{{conditionalCountZero this}}"/> 
+            {{else}}
+            <input type="radio" checked="{{checked}}" name="{{getBlockName}}" data-option="{{this}}" class="toggle-checked filterByRadioOption count-{{conditionalCountZero this}}"/>
+            {{/if}}
+          </span>
+          <!-- <span class="mycode mycode-{{getBlockName}}" style="background-color: rgba(0,100,225,{{opacity this}}); flex: 1;" data-blockname="{{getBlockName}}">{{this}}</span> -->
+          <span class="mycode mycode-{{getBlockName}}" data-blockname="{{getBlockName}}">{{this}}</span>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class="row block-level {{#if hideLabels}}hide-label{{/if}} hideRow-{{conditionalCountBlockRow blockname}}" style="display: {{blockStyle blockname}}; font-size:x-large">
+    <div class="col-md-2"></div>
+    <div class="col-md-10">
+      <div style="padding-left: 0px; display: flex;">
+       <span style="padding-left:15px;"> </span>
+       <span class="cleanUpCall" style="flex: 1;">}</span>
+     </div>
+   </div>
+ </div>
+</template>
+
+<template name="example">
+  <div>
+   <a href="{{url}}">Link to the GitHub source code</a>
+   <span id="exampleID{{exampleID}}"><pre><code>{{rawCode}}</code></pre></span>
+ </div>
+</template>
+
+<template name="breadcrumb">
+  <!-- <span class="label label-default">{{shortName key}}<span class="badge removeFilter">x</span></span>  -->
+  <span class="{{key}}">{{shortName key}},</span>
+</template>

@@ -1,0 +1,322 @@
+body {
+  font-family: sans-serif;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  /*padding-top: 150px;*/
+}
+
+.button-set {
+  margin-top: 20px;
+}
+.progress-bar {
+  float: right !important;
+}
+
+.code {
+  font-family: monospace;
+}
+
+.numbers {
+  text-align: right;
+}
+.count-0 {
+  visibility: hidden !important;
+}
+.hideRow-0 {
+  display: none !important;
+}
+.hide-label {
+  display: none !important;
+}
+.hide-0 {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.toggledForCount {
+  display: none;
+}
+
+.hideClass {
+  display: none;
+}
+.singleOption {
+  visibility: hidden;
+}
+
+.initialization {
+  /*background-color: rgba(31,120,180,0.6);*/
+  background-color: rgba(227,26,28,0.5);
+}
+.try {
+  background-color: rgba(255,127,0,0.7);
+}
+.configuration {
+  background-color: rgba(251,154,153,0.7);
+}
+.guardType {
+  background-color: rgba(253,191,111, 0.7);
+}
+.guardCondition {
+  background-color: rgba(253,191,111, 0.7);
+}
+.focalAPI {
+  background-color: rgba(31,120,180,0.65);
+  /*background-color: rgba(227,26,28,0.6);*/
+}
+.checkType, .followUpCheck {
+  background-color: rgba(241, 196, 15,0.7);
+}
+/*.followUpCheck {
+  background-color: rgba(51,160,44,0.7);
+}*/
+.use {
+  background-color: rgba(178,223,138,0.7);
+}
+.exceptionType {
+  background-color: rgba(166,206,227,0.7);
+}
+.exceptionHandlingCall {
+  /*background-color: rgba(52, 152, 219,0.7);*/
+  background-color: rgba(76,146,76,0.7);
+}
+.finally {
+  background-color: rgba(106,61,154,0.7);
+}
+.cleanUpCall {
+  background-color: rgba(202,178,214,0.7);
+}
+
+
+.left-indent {
+  padding-left: 30px;
+}
+
+.no-padding{
+  padding: 0px;
+}
+.padding-left-30 {
+  padding-left: 30px;
+}
+.padding-left-60 {
+  padding-left: 60px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+
+.toggled {
+  display: none;
+}
+ 
+header {
+  /*background: #d2edf4;*/
+  /*background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);*/
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+ 
+#login-buttons {
+  display: block;
+}
+ 
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+ 
+form {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+ 
+.new-task input {
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding-right: 80px;
+  font-size: 1em;
+}
+ 
+.new-task input:focus{
+  outline: 0;
+}
+ 
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+ 
+.hang-right {
+  float: right;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+ 
+li {
+  position: relative;
+  list-style: none;
+  padding-left: 15px;
+  /*padding: 15px;*/
+  border-bottom: #eee solid 1px;
+}
+ 
+/*li .text {
+  margin-left: 10px;
+}*/
+
+.mycode {
+  font-family: monospace;
+  padding: 0px;
+  margin: 0px;
+}
+
+.big-parens {
+  font-size: 100px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+li.checked {
+  /*color: #888;*/
+  color: black;
+}
+li {
+  color: #888;
+}
+ 
+li.checked .text {
+  text-decoration: line-through;
+}
+ 
+li.private {
+  background: #eee;
+  border-color: #ddd;
+}
+ 
+header .hide-completed {
+  float: right;
+}
+ 
+.toggle-private {
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+ 
+  .search {
+    width: 150px;
+    clear: both;
+  }
+ 
+  .new-task input {
+    padding-bottom: 5px;
+  }
+}
+
+/*@media (min-width: 992px) {
+  .row-relative{
+    position: relative;
+  }
+  .border-left{
+    padding-right: 0;
+    position: static;
+  }
+
+  .left-padding{
+    padding-left: 15px;
+  }
+  .border-left:before {
+      content: "";
+      position: absolute;
+      padding-left: 15px;
+      top: 0;
+      bottom: 0;  
+      /*border-left: 1px solid black; */
+  }
+}*/
+
+.percentage {
+  font-size: .8em;
+  line-height: 0.3;
+  text-transform: uppercase;
+  width: 100%;
+  height: 35px;
+}
+.percentage:after {
+  content: "";
+  display: block;
+  background-color: #3d9970;
+  margin-bottom: 10px;
+  height: 50%;
+  position: relative;
+  transition: background-color .3s ease;
+  cursor: pointer;
+}
+.percentage:hover:after, .percentage:focus:after {
+  background-color: #aaa;
+}
+
+.percentage .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 8px;
+  position: relative;
+  z-index: 1;
+  left: 30px;
+  top: 30px;
+}
+
+
+.percentage:hover .tooltiptext {
+    visibility: visible;
+}
+
+.scroll {
+    background-color: #00FFFF;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+
+
+
+
+
+
+
+
